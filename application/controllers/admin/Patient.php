@@ -216,7 +216,7 @@ class patient extends Admin_Controller
             }
 
             $sender_details = array('patient_id' => $insert_id, 'patient_name' => $patient_name, 'opd_no' => $opd_no, 'contact_no' => $mobileno, 'email' => $email);
-            $result = //$this->mailsmsconf->mailsms('opd_patient_registration', $sender_details);
+            //$result = $this->mailsmsconf->mailsms('opd_patient_registration', $sender_details);
 
         }
         echo json_encode($array);
@@ -4068,7 +4068,7 @@ class patient extends Admin_Controller
             }
 
             $sender_details = array('patient_id' => $insert_id, 'patient_name' => $patient_name, 'opd_no' => $opd_no, 'contact_no' => $mobileno, 'email' => $email);
-            $result = //$this->mailsmsconf->mailsms('opd_patient_registration', $sender_details);
+            //$result = $this->mailsmsconf->mailsms('opd_patient_registration', $sender_details);
 
         }
         echo json_encode($array);
