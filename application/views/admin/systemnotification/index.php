@@ -178,7 +178,7 @@
                                         </div>
                                     </div>
                                     <div class="accordianbody" style="position: relative;">
-                                        <div class="note-content"> 	<?php echo $result['notification_desc'];?>									
+                                        <div class="note-content"> 	<?php echo str_replace("http://localhost/hms_fc/",base_url(),$result['notification_desc']);?>									
                                             <?php 
 											// $str  	= 		$result['notification_desc'];									
 											// $explodedata 	= 		(explode(",",$str));								
