@@ -1791,7 +1791,7 @@ if($conference_value->status == 0){?>
                                 <div class="form-group">
                                     <label>
                                         <?php echo $this->lang->line('test') ; ?>
-                                            <a data-toggle="modal" onclick="holdModal('add_investigation','append_prescription_lab')" class="btn btn-primary btn-sm addinvestigation"><i class="fa fa-plus"></i></a></label> <small class="req"> *</small>
+                                            <a data-toggle="modal" onclick="holdModal('add_investigation','append_prescription_lab')" class="btn btn-primary btn-sm addinvestigation"><i class="fa fa-plus"></i></a></label>
                                             <select class="form-control select2" style="width: 100%" name='lab_test[]' id="lab_test" multiple>
                                                 <option value=""><?php echo $this->lang->line('select') ?>
                                                 </option>
@@ -1805,17 +1805,16 @@ if($conference_value->status == 0){?>
                             </div>  
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label>
-                                        <?php echo $this->lang->line('precaution') ; ?></label> <small class="req"> *</small>
-                                            <select class="form-control select2" style="width: 100%" name='precaution[]' multiple>
-                                                <option value=""><?php echo $this->lang->line('select') ?>
-                                                </option>
-                                                <?php foreach ($precautions as $pk => $precaution) {
-                                                ?>
-                                                <option value="<?php echo $precaution["id"]; ?>"><?php echo $precaution["precaution"] ?>
-                                                </option>   
-                                                <?php } ?>
-                                            </select>
+                                    <label><?php echo $this->lang->line('precaution') ; ?></label>
+                                    <select class="form-control select2" style="width: 100%" name='precaution[]' multiple>
+                                        <option value=""><?php echo $this->lang->line('select') ?>
+                                        </option>
+                                        <?php foreach ($precautions as $pk => $precaution) {
+                                        ?>
+                                        <option value="<?php echo $precaution["id"]; ?>"><?php echo $precaution["precaution"] ?>
+                                        </option>   
+                                        <?php } ?>
+                                    </select>
                                 </div>
                             </div>  
                         </div>   

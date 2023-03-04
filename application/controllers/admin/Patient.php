@@ -2449,8 +2449,8 @@ class patient extends Admin_Controller
         $this->form_validation->set_rules('opd_no', $this->lang->line('opd_no'), 'trim|required|xss_clean');
         $this->form_validation->set_rules('symptom[]', $this->lang->line('symptom'), 'trim|required|xss_clean');
         $this->form_validation->set_rules('diagnosis[]', $this->lang->line('diagnosis'), 'trim|required|xss_clean');
-        $this->form_validation->set_rules('lab_test[]', $this->lang->line('lab_test'), 'trim|required|xss_clean');
-        $this->form_validation->set_rules('precaution[]', "PRecaution", 'trim|required|xss_clean');
+        // $this->form_validation->set_rules('lab_test[]', $this->lang->line('lab_test'), 'trim|required|xss_clean');
+        // $this->form_validation->set_rules('precaution[]', "PRecaution", 'trim|required|xss_clean');
         if ($this->form_validation->run() == false) {
             $msg = array(
                

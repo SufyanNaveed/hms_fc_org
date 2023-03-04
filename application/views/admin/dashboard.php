@@ -72,7 +72,6 @@
                                     <span class="info-box-text"><?php echo 'Total '.$this->lang->line('opd') . " " . $this->lang->line('patient'); ?></span>
                                     <span class="info-box-number"><?php
                                         if (!empty($opd_income)) {
-                                            // echo $opd_income;
                                             echo $opd_income;
                                         } else {
                                             echo "0";
